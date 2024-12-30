@@ -177,3 +177,17 @@ $conn->close();
 
 </body>
 </html>
+
+//mysql input
+CREATE TABLE departments (
+    id INT AUTO_INCREMENT PRIMARY KEY,       -- Unique identifier for the department
+    name VARCHAR(255) NOT NULL,              -- Name of the department
+    location VARCHAR(255) NOT NULL           -- Location of the department
+);
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_ssn VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL,
+    department_id INT NOT NULL
+);
